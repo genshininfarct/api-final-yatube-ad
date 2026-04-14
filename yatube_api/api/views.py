@@ -1,7 +1,7 @@
-from rest_framework import viewsets, mixins, filters, permissions
+from rest_framework import viewsets, mixins, filters
 from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
 
-from posts.models import Post, Group, Comment, Follow
+from posts.models import Post, Group, Comment
 from .serializers import (
     PostSerializer, GroupSerializer, CommentSerializer, FollowSerializer
 )
