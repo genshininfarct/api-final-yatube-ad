@@ -93,7 +93,6 @@ STATICFILES_DIRS = ((BASE_DIR / 'static/'),)
 
 
 REST_FRAMEWORK = {
-    #'PAGE_SIZE': 10,
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     ],
