@@ -6,6 +6,6 @@ class IsAuthorOrReadOnlyPermission(permissions.BasePermission):
         # Безопасные методы разрешены всем
         if request.method in permissions.SAFE_METHODS:
             return True
-        
+
         # Изменение и удаление разрешены только автору
         return obj.author == request.user
